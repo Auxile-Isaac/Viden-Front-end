@@ -1,0 +1,111 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+}
+
+button {
+    background-color: #5f9dc7;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.top {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(69, 87, 165, 0.4)), url("/Images/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.videnLogo {
+    height: 80px;
+    padding: 10px;
+}
+
+.logoDescription {
+    text-align: left;
+    font-family: 'bitter', 'georgia', serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    /* background-color: #2980b9; */
+    text-decoration: underline;
+}
+
+.navigations ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.navigations li {
+    display: inline-block;
+    margin-right: 20px;
+    /* text-decoration: none; */
+}
+
+.navigations ul li:nth-child(4) {
+    background-color: #5f9dc7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navigations ul li:nth-child(4):hover {
+    background-color: #84aeca;
+}
+
+.navigations ul li:nth-child(1) {
+    text-decoration: underline;
+}
+
+.solutions {
+    color: white;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
