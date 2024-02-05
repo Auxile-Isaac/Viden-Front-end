@@ -12,3 +12,8 @@ window.onscroll = function() {
 
     prevScrollpos = currentScrollPos;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    let currentYear = new Date().getFullYear();
+    document.getElementById("copyrightYear").innerText = currentYear;
+});
