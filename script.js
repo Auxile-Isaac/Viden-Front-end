@@ -17,3 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentYear = new Date().getFullYear();
     document.getElementById("copyrightYear").innerText = currentYear;
 });
+
+function toggleMenu() {
+    var navigationMenu = document.querySelector('.navigations ul');
+    navigationMenu.classList.toggle('show');
+}

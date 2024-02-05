@@ -209,3 +209,69 @@ input[type="submit"]:hover {
     text-align: left;
     /* text-shadow: black; */
 }
+
+.menu-button{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigations ul {
+        display: none; /* Hide the regular navigation menu on smaller screens */
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Background color for the mobile menu */
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigations ul.show {
+        display: flex; /* Show the mobile menu when the show class is applied */
+        flex-direction: column;
+    }
+
+    .navigations li {
+        display: block;
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #555; /* Border between menu items */
+    }
+
+    .menu-button {
+        display: block; /* Show the menu button on smaller screens */
+        background-color: #fff;
+        color: #5f9dc7;
+        font-size: 30px;
+        /* padding: 10px 20px; */
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        /* top: 10px; */
+        left: 10px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        /* background-color: #fff; */
+    }
+
+    .header{
+        background-color: #fff;
+    }
+
+    .videnLogo {
+        height: 40px; /* Adjust the height as needed */
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .logoDescription {
+        display: none;
+        text-align: left;
+        font-family: 'bitter', 'georgia', serif;
+    }
+}
