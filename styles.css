@@ -40,11 +40,16 @@ button {
     align-items: center;
     font-size: larger;
     font-weight: bold;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
     display: flex;
-    flex-direction: row;
     color: white;
 }
 
@@ -96,10 +101,6 @@ li a:hover {
     border-radius: 5px;
 }
 
-.navigations ul li:nth-child(4):hover {
-    background-color: #84aeca;
-}
-
 .navigations ul li:nth-child(1) {
     text-decoration: underline;
 }
@@ -108,4 +109,103 @@ li a:hover {
     color: white;
     padding-top: 25%;
     padding-bottom: 25%;
+}
+
+.why_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.goal {
+    display: flex;
+    margin-top: 50px;
+}
+
+.content {
+    flex: 1;
+    background-color: #0D1A26;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    /* Ensure the image takes the full height of the container */
+    object-fit: cover;
+    /* Maintain image aspect ratio */
+}
+
+.contact {
+    background-image: url(/Images/contact.webp);
+}
+
+.contact_head {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contact-info {
+    padding: 20px;
+    /* box-sizing: border-box; */
+    color: white;
+    text-align: left;
+    /* text-shadow: black; */
 }

@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viden</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 
 <body>
     <!-- header  -->
     <div class="top">
-        <div class="header">
+        <div class="header" id="header">
             <div class="logo">
                 <img class="videnLogo" src="/Images/logo.webp" alt="logo" style="margin-right: 10px;" />
                 <div class="logoDescription">
@@ -22,9 +28,9 @@
             <div class="navigations">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#Services">SERVICES</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -37,7 +43,81 @@
         </div>
         <!-- Solutions end -->
     </div>
+    <div class="middle" id="Services">
+        <h1 style="color:#1D2023; font-family: Georgia serif; font-size: 36px; font-weight: 700; text-align: center;">
+            Designing Tomorrow's Success with <br> Tailored Software Solutions</h1>
+        <p style="color: #1A63A4; font-family: Georgia serif; font-size: 18px; font-weight: 700; text-align: center;">
+            Why Us?</p>
+        <div class="why_us">
+            <div>
+                <img src="/Images/Fueling .webp" alt="Fueling Growth">
+                <h3 style="font-family: Georgia, serif; font-size: 18px; font-weight: 400;"> Fueling Growth </h3>
+                <h4 style="color:#1A63A4; font-family: Georgia, serif; font-size: 18px; font-weight: 400;">Igniting
+                    Success, One Innovation at a Time </h4>
+                <p style="color: #50555C; font-family: Georgia, serif; font-size: 15px; font-weight: 400;">Solutions
+                    designed to propel your business forward, ensuring <br> continuous expansion and success.</p>
+            </div>
+            <div>
+                <img src="/Images/cost.webp" alt="Fueling Growth">
+                <h3 style="font-family: Georgia, serif; font-size: 18px; font-weight: 400;"> Cost Effective </h3>
+                <h4 style="color:#1A63A4; font-family: Georgia, serif; font-size: 18px; font-weight: 400;">Redefining
+                    Affordability </h4>
+                <p style="color: #50555C; font-family: Georgia, serif; font-size: 15px; font-weight: 400;">Prioritize
+                    efficiency without compromising quality, delivering <br> top-notch solutions that won't break the
+                    bank</p>
+            </div>
+            <div>
+                <img src="/Images/timeless.webp" alt="Fueling Growth">
+                <h3 style="font-family: Georgia, serif; font-size: 18px; font-weight: 400;"> Cost Effective </h3>
+                <h4 style="color:#1A63A4; font-family: Georgia, serif; font-size: 18px; font-weight: 400;">Timeliness
+                    Redefined</h4>
+                <p style="color: #50555C; font-family: Georgia, serif; font-size: 15px; font-weight: 400;">With a
+                    commitment to deadlines, we provide swift and <br> reliable solutions, ensuring your projects stay
+                    on track</p>
+            </div>
+        </div>
+        <div class="goal" id="#About">
+            <div class="content">
+                <h2 style="font-family: Georgia, serif; font-size: 29px; font-weight: 700px;">We help take your business
+                    <br> to the next level. <br> Together we reach the goal.</h2>
+                <p style="font-family: Georgia, serif; font-size: 15px; font-weight: 400px;">Empowering businesses to
+                    ascend, our collaborative approach propels them towards new heights, achieving shared goals and
+                    reaching unprecedented levels of success together.</p>
+            </div>
+            <div class="image">
+                <img style="width: 100%;" src="/Images/goal.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="Contact">
+        <div class="contact_head">
+            <strong style="font-size: 36px; font-weight: 700; font-family: Georgia, serif">Contact Us</strong>
+            <strong style="font-size: 23px; font-weight: 700; font-family: Georgia, serif; padding-top: 30px;">Don't be afraid to reach out.
+                You + us = awesome.</strong>
+        </div>
+        <div class="messages">
 
+            <form action="#" method="post">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="contact-info">
+                <p style="color: white; font-size:15px"><i class="fa fa-map-marker" style="font-size:15px; color: white;"></i> 44 KG
+                    548 St, Kigali</p>
+                <p style="color: white; font-size:15px"><i class='fa fa-clock-o' style='font-size:15px; color:#ffffff'></i> Mon-Fri
+                    9AM-5PM</p>
+                <p style="color: white; font-size:15px"><i class='fa fa-mobile-phone' style='font-size:15px; color: #ffffff;'></i>
+                    +250788551511</p>
+                <p style="color: white; font-size:15px"><i class="fa fa-envelope" style="color:#ffffff; font-size:15px"></i>
+                    info@viden.rw</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
