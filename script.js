@@ -4,13 +4,18 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
 
-    if (prevScrollpos > currentScrollPos) {
-        header.style.backgroundColor = "transparent";
-    } else {
+    if (window.matchMedia("(min-width: 768px)").matches && currentScrollPos > 0){
         header.style.backgroundColor = "#5f9dc7";
+    }else if (window.matchMedia("(max-width: 768px)").matches && currentScrollPos > 0){
+        header.style.backgroundColor = "#fff";
+    }else{
+        header.style.backgroundColor = "transparent";
     }
-
-    prevScrollpos = currentScrollPos;
+    // if (currentScrollPos > 0) {
+    //     header.style.backgroundColor = "#5f9dc7";
+    // } else {
+    //     header.style.backgroundColor = "transparent";
+    // }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -22,3 +27,4 @@ function toggleMenu() {
     var navigationMenu = document.querySelector('.navigations ul');
     navigationMenu.classList.toggle('show');
 }
+

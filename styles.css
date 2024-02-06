@@ -274,27 +274,31 @@ input[type="submit"]:hover {
 
     .header{
         background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .videnLogo {
-        height: 40px; /* Adjust the height as needed */
+        height: 60px; /* Adjust the height as needed */
         padding: 0px;
         margin-top: 0px;
     }
 
     .logoDescription {
         display: none;
-        text-align: left;
-        font-family: 'bitter', 'georgia', serif;
+    }
+
+    .solutions{
+        padding-top: 100%;
     }
 
     .solutions > h1 {
         font-size: 30px;
-        margin-top: 50%;
     }
 
     .solutions > button{
-        width: 100%;
+        width: 75%;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -309,5 +313,22 @@ input[type="submit"]:hover {
 
     .goal{
         flex-direction: column;
+    }
+
+    .messages{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        /* margin-left: 15%; */
+    }
+
+    /* .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+    input[type="submit"] {
+        width: 100%;
     }
 }
