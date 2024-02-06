@@ -18,7 +18,7 @@
 <body>
     <!-- header  -->
     <div class="top" id="home">
-        <div class="header" id="header">
+        <section class="header" id="header">
             <div class="logo">
                 <button class="menu-button" onclick="toggleMenu()"><i class='fa fa-bars'></i></button>
                 <img class="videnLogo" src="/Images/logo.webp" alt="logo" style="margin-right: 10px;" />
@@ -35,7 +35,7 @@
                     <li><a href="#Contact">CONTACT</a></li>
                 </ul>
             </div>
-        </div>
+        </section>
         <!-- header end -->
 
         <!-- Solutions start -->
@@ -45,7 +45,7 @@
         </div>
         <!-- Solutions end -->
     </div>
-    <div class="middle" id="Services">
+    <section class="middle" id="Services">
         <h1> Designing Tomorrow's Success with <br> Tailored Software Solutions</h1>
         <p style="color: #1A63A4; font-family: Georgia serif; font-size: 18px; font-weight: 700; text-align: center;">
             Why Us?</p>
@@ -70,14 +70,15 @@
             <div>
                 <img src="/Images/timeless.webp" alt="Fueling Growth">
                 <h3 style="font-family: Georgia, serif; font-size: 18px; font-weight: 400;"> Timeliness Redefined</h3>
-                <h4 style="color:#1A63A4; font-family: Georgia, serif; font-size: 18px; font-weight: 400;">Precision in Every Promise</h4>
+                <h4 style="color:#1A63A4; font-family: Georgia, serif; font-size: 18px; font-weight: 400;">Precision in
+                    Every Promise</h4>
                 <p style="color: #50555C; font-family: Georgia, serif; font-size: 15px; font-weight: 400;">With a
                     commitment to deadlines, we provide swift and <br> reliable solutions, ensuring your projects stay
                     on track</p>
             </div>
-        </div>        
-    </div>
-    <div class="goal" id="About">
+        </div>
+    </section>
+    <section class="goal" id="About">
         <div class="content">
             <h2 style="font-family: Georgia, serif; font-size: 29px; font-weight: 700px;">We help take your business
                 <br> to the next level. <br> Together we reach the goal.
@@ -89,8 +90,8 @@
         <div class="image">
             <img style="width: 100%;" src="/Images/goal.webp" alt="">
         </div>
-    </div>
-    <div class="contact" id="Contact">
+    </section>
+    <section class="contact" id="Contact">
         <div class="contact_head">
             <strong style="font-size: 36px; font-weight: 700; font-family: Georgia, serif">Contact Us</strong>
             <strong style="font-size: 23px; font-weight: 700; font-family: Georgia, serif; padding-top: 30px;">Don't be
@@ -99,10 +100,13 @@
         </div>
         <div class="messages">
 
-            <form action="#" method="post">
+            <form action="https://api.web3forms.com/submit" method="POST" id="myForm">
+
+                <input type="hidden" name="access_key" value="9a1287aa-84a1-4b0b-9640-6deb6ae9d704">
+
                 <input type="text" id="name" name="name" placeholder="Name" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
-                <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+                <textarea id="message" name="message" placeholder="Message" rows="8" required></textarea>
 
                 <input type="submit" value="Submit">
             </form>
@@ -122,11 +126,17 @@
                     info@viden.rw</p>
             </div>
         </div>
-    </div>
+    </section>
     <footer style="padding: 15px;">
         <p>&copy; <span id="copyrightYear"></span> Viden Ltd. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("0WceGKT0YjqE_mOdo"); // Replace with your EmailJS User ID
+        })();
+    </script>
 </body>
 
 </html>

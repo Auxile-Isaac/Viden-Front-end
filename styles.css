@@ -101,7 +101,7 @@ li a:hover {
     border-radius: 5px;
 }
 
-.navigations ul li:nth-child(1) {
+.navigations a.active {
     text-decoration: underline;
 }
 
@@ -251,10 +251,14 @@ input[type="submit"]:hover {
         border-bottom: 1px solid #555; /* Border between menu items */
     }
 
+    .navigations li.active a {
+        text-decoration: underline;
+      }
+
     .menu-button {
         display: block; /* Show the menu button on smaller screens */
-        background-color: #fff;
-        color: #5f9dc7;
+        background-color: #5f9dc7;
+        color: #fff;
         font-size: 30px;
         /* padding: 10px 20px; */
         border-radius: 5px;
