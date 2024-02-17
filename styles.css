@@ -95,7 +95,7 @@ li a:hover {
     /* text-decoration: none; */
 }
 
-.navigations ul li:nth-child(4) {
+.navigations ul li:nth-child(1) {
     background-color: #5f9dc7;
     padding: 10px;
     border-radius: 5px;
@@ -204,10 +204,9 @@ input[type="submit"]:hover {
 
 .contact-info {
     padding: 20px;
-    /* box-sizing: border-box; */
-    color: white;
+    color: #0D1A26;
     text-align: left;
-    /* text-shadow: black; */
+    /* text-shadow:4px 4px 4px black; */
 }
 
 .menu-button{
@@ -334,5 +333,11 @@ input[type="submit"]:hover {
 
     input[type="submit"] {
         width: 100%;
+    }
+
+    .contact-info {
+        padding: 20px;
+        color: #fff;
+        text-align: left;        
     }
 }
